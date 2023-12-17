@@ -18,7 +18,11 @@ android {
     }
 
     buildTypes {
+        debug {
+            buildConfigField("String", "BASE_URL", "\"https://mocki.io/v1/0645cd1c-4f05-438d-a8c2-6a9d798f998a\"")
+        }
         release {
+            buildConfigField("String", "BASE_URL", "\"https://mocki.io/v1/0645cd1c-4f05-438d-a8c2-6a9d798f998a\"")
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
@@ -29,6 +33,11 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
+    }
+
+    buildFeatures{
+        buildConfig = true
+        viewBinding = true
     }
 }
 
@@ -41,4 +50,10 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
+    implementation("androidx.fragment:fragment-ktx:1.6.2")
+
+    //OkHttp
+    implementation("com.squareup.okhttp3:okhttp:4.9.3")
+    implementation("com.google.code.gson:gson:2.10")
 }

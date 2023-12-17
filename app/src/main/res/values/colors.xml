@@ -2,4 +2,12 @@
 <resources>
 	<color name="black">#FF000000</color>
 	<color name="white">#FFFFFFFF</color>
+
+
+	<color name="button_black_theme">#000000</color>
+	<color name="button_default_theme">#5893F8</color>
+	<color name="button_natural_theme">#878383</color>
+	<color name="shape_text_view_color">#D4D1D5</color>
+	<color name="correct_color">#56a771</color>
+	<color name="error_color">#e6506a</color>
 </resources>

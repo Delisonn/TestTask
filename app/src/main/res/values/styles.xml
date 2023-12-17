@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<style name="BaseDefaultDefaultTheme" parent="Theme.TestQuizTask">
+		<item name="android:windowBackground">@drawable/default_theme</item>
+		<item name="android:statusBarColor">#cee8fc</item>
+
+	</style>
+
+	<style name="BaseSecondTheme" parent="Theme.TestQuizTask">
+		<item name="android:windowBackground">@drawable/second_theme</item>
+		<item name="android:statusBarColor">#3b3b3b</item>
+
+	</style>
+
+	<style name="BaseThirdTheme" parent="Theme.TestQuizTask">
+		<item name="android:windowBackground">@drawable/third_theme</item>
+		<item name="android:statusBarColor">#bbbbbb</item>
+	</style>
+
+	<style name="DefaultThemeTextView" parent="BaseDefaultDefaultTheme">
+		<item name="fontFamily">@font/pentagra</item>
+		<item name="android:textSize">18sp</item>
+		<item name="android:maxLines">1</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:ellipsize">end</item>
+	</style>
+
+	<style name="SecondThemeTextView" parent="BaseSecondTheme">
+		<item name="fontFamily">@font/brassmono</item>
+		<item name="android:textSize">18sp</item>
+		<item name="android:textColor">@color/white</item>
+		<item name="android:maxLines">1</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:ellipsize">end</item>
+	</style>
+
+	<style name="ThirdThemeTextView" parent="BaseThirdTheme">
+		<item name="fontFamily">@font/oceanwide</item>
+		<item name="android:textSize">18sp</item>
+		<item name="android:maxLines">1</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:ellipsize">end</item>
+	</style>
+
+	<style name="DefaultThemeGoBackImageView" parent="DefaultThemeTextView">
+		<item name="android:tint">@color/black</item>
+	</style>
+
+	<style name="SecondThemeGoBackImageView" parent="SecondThemeTextView">
+		<item name="android:tint">@color/white</item>
+	</style>
+
+	<style name="ThirdThemeGoBackImageView" parent="ThirdThemeTextView">
+		<item name="android:tint">@color/black</item>
+	</style>
+
+</resources>
